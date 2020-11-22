@@ -1,0 +1,28 @@
+<p>Plant List</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Common Name</th>
+      <th>Plant Type</th>
+      <th>Bloom Time</th>
+      <th>Flower Color</th>
+      <th>Soil Type</th>
+      <th>Habitat Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let plant of plants">
+      <td>{{plant.id}}</td>
+      <td>{{plant.commonNname}}</td>
+      <td>{{plant.plantType}}</td>
+      <td>{{plant.bloomTime}}</td>
+      <td>{{plant.flowerColor}}</td>
+      <td>{{plant.soilType}}</td>
+      <td>{{plant.habitatValue}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+Common Name, Plant Type, Bloom Time, Flower Color, Soil Type, Habitat Value
