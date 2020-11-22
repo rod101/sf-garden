@@ -1,27 +1,27 @@
-<h1>Plant List</h1>
 
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Common Name</th>
-      <th>Plant Type</th>
-      <th>Bloom Time</th>
-      <th>Flower Color</th>
-      <th>Soil Type</th>
-      <th>Habitat Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let plant of plants">
-      <td>{{plant.common_name}}</td>
-      <td>{{plant.plant_type}}</td>
-      <td>{{plant.bloom_time}}</td>
-      <td>{{plant.flower_color}}</td>
-      <td>{{plant.soil_type}}</td>
-      <td>{{plant.habitat_value}}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+  <h1>Plant List</h1>
 
-
-
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Common Name</th>
+        <th>Plant Type</th>
+        <th>Bloom Time</th>
+        <th>Flower Color</th>
+        <th>Soil Type</th>
+        <th>Habitat Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plant of plants">
+        <td>{{plant.common_name}}</td>
+        <td>{{plant.plant_type}}</td>
+        <td>{{plant.bloom_time}}</td>
+        <td>{{plant.flower_color}}</td>
+        <td>{{plant.soil_type}}</td>
+        <td>{{plant.habitat_value}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
