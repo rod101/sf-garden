@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import {PlantlistComponent} from './plantlist/plantlist.component';
 const routes: Routes = [
   {
+    path: '',
+    component: PlantlistComponent
+  },
+  {
     path: 'plants',
     component: PlantlistComponent
   }
