@@ -9,7 +9,7 @@ export class RestService {
 
   constructor( private http:HttpClient) { }
 
-  url: string = "http://localhost:3000/Plants";
+  url: string = "https://data.sfgov.org/resource/vmnk-skih.json";
   getPlants(){
     return this.http.get<Plants[]>(this.url);
   }

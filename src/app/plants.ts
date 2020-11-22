@@ -1,20 +1,18 @@
 export class Plants {
-  id: string;
-  commonNname: string;
-  plantType: string;
-  bloomTime: string;
-  flowerColor: string;
-  soilType: string;
-  habitatValue: string;
+  common_name: string;
+  plant_type: string;
+  bloom_time: string;
+  flower_color: string;
+  soil_type: string;
+  habitat_value: string;
 
-  constructor(id, commonNname, plantType, bloomTime, flowerColor, soilType, habitatValue){
-    this.id = id;
-    this.commonNname = commonNname;
-    this.plantType = plantType;
-    this.bloomTime = bloomTime;
-    this.flowerColor = flowerColor;
-    this.soilType = soilType;
-    this.habitatValue = habitatValue;
+  constructor(common_name, plant_type, bloom_time, flower_color, soil_type, habitat_value){
+    this.common_name = common_name;
+    this.plant_type = plant_type;
+    this.bloom_time = bloom_time;
+    this.flower_color = flower_color;
+    this.soil_type = soil_type;
+    this.habitat_value = habitat_value;
   }
 
 }

@@ -8,7 +8,7 @@ import { RestService } from '../rest.service';
   styleUrls: ['./plantlist.component.css']
 })
 export class PlantlistComponent implements OnInit {
-  plants:Plants[] = [];
+  plants: Plants[] = [];
 
   constructor(public rs: RestService) {
 
@@ -18,7 +18,8 @@ export class PlantlistComponent implements OnInit {
   ngOnInit(): void {
     this.rs.getPlants().subscribe((response) => {
       this.plants = response;
-    })
+      console.log(this.plants);
+    });
   }
 
 }

@@ -1,4 +1,4 @@
-<p>Plant List</p>
+<h1>Plant List</h1>
 
 <table class="table table-bordered">
   <thead>
@@ -13,16 +13,12 @@
   </thead>
   <tbody>
     <tr *ngFor="let plant of plants">
-      <td>{{plant.id}}</td>
-      <td>{{plant.commonNname}}</td>
-      <td>{{plant.plantType}}</td>
-      <td>{{plant.bloomTime}}</td>
-      <td>{{plant.flowerColor}}</td>
-      <td>{{plant.soilType}}</td>
-      <td>{{plant.habitatValue}}</td>
+      <td>{{plant.common_name}}</td>
+      <td>{{plant.plant_type}}</td>
+      <td>{{plant.bloom_time}}</td>
+      <td>{{plant.flower_color}}</td>
+      <td>{{plant.soil_type}}</td>
+      <td>{{plant.habitat_value}}</td>
     </tr>
   </tbody>
 </table>
-
-
-Common Name, Plant Type, Bloom Time, Flower Color, Soil Type, Habitat Value
