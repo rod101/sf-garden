@@ -1,6 +1,9 @@
 
 <div class="container">
   <h1>Plant List</h1>
+  <nav class="navbar">
+    <input class="form-control" type="text" name="common_name" [(ngModel)]="common_name" (ngModelChange)="Search()" placeholder="Enter Plant Common Name to Search">
+  </nav>
 
   <table class="table table-bordered">
     <thead>

@@ -9,6 +9,7 @@ import { RestService } from '../rest.service';
 })
 export class PlantlistComponent implements OnInit {
   plants: Plants[] = [];
+  common_name: any;
 
   constructor(public rs: RestService) {
 
@@ -18,8 +19,21 @@ export class PlantlistComponent implements OnInit {
   ngOnInit(): void {
     this.rs.getPlants().subscribe((response) => {
       this.plants = response;
-      console.log(this.plants);
     });
+  }
+
+  Search(){
+    if (!this.common_name ) {
+      this.plants = this.plants;
+    } else {
+      const filteredResults = this.plants.filter(hero => {
+        return Object.values(hero)
+          .reduce((prev, curr) => {
+            return prev || curr.toString().toLowerCase().includes(this.common_name.toLowerCase());
+          }, false);
+      });
+      this.plants = filteredResults;
+    }
   }
 
 }
