@@ -17,7 +17,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let plant of plants">
+      <tr *ngFor="let plant of plants | paginate: { itemsPerPage: 10, currentPage: p }">
         <td>{{plant.common_name}}</td>
         <td>{{plant.plant_type}}</td>
         <td>{{plant.bloom_time}}</td>
@@ -27,4 +27,5 @@
       </tr>
     </tbody>
   </table>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>

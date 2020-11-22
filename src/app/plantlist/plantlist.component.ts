@@ -10,6 +10,7 @@ import { RestService } from '../rest.service';
 export class PlantlistComponent implements OnInit {
   plants: Plants[] = [];
   common_name: any;
+  p:number = 1;
 
   constructor(public rs: RestService) {
 
